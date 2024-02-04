@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #services {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
+
+        .service {
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1b3b4a; /* Dark blue color for heading */
+        }
+
+        .service p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 15px;
+            }
+
+            .service {
+                padding: 15px;
+            }
+
+            .service h3 {
+                font-size: 20px;
+            }
+
+            .service p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="header-picture1.jpg" alt="Service 1">
+                    <h3>Examens Dentaires</h3>
+                    <p>Les examens dentaires réguliers sont essentiels pour maintenir une bonne santé bucco-dentaire. Chez Paradis Dentaire, nous mettons l'accent sur la prévention et la détection précoce des problèmes dentaires afin de garantir des sourires sains et radieux pour nos patients.</p>
+                </div>
+                <div class="service">
+                    <img src="header-picture.jpg" alt="Service 2">
+                    <h3>Nettoyage des Dents</h3>
+                    <p>Un nettoyage dentaire régulier est essentiel pour éliminer la plaque dentaire, prévenir les problèmes de gencives et maintenir une haleine fraîche. Chez Paradis Dentaire, nous comprenons l'importance d'une bonne hygiène bucco-dentaire et nous sommes dévoués à fournir des nettoyages dentaires de qualité supérieure pour nos patients.</p>
+                </div>
+                <div class="service">
+                    <img src="about-us.jpg" alt="Service 3">
+                    <h3>Obturations et Restaurations</h3>
+                    <p>Les obturations dentaires et les restaurations sont des procédures courantes utilisées pour traiter les caries, restaurer la structure des dents endommagées et prévenir toute détérioration ultérieure. Chez Paradis Dentaire, nous comprenons l'importance de restaurer la santé et la fonctionnalité de vos dents de manière durable et esthétique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

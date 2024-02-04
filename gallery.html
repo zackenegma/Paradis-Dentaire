@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff;
+            color: #333;
+        }
+        body {
+    background-image: url("pexels-cedric-fauntleroy-4269944.jpg");
+    background-size: cover;
+    animation: diaporama 10s infinite;
+  }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #gallery {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item video,
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Add more styles as needed */
+
+        .contact-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 50px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 15px;
+            }
+
+            .gallery-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <video width="320" height="240" controls>
+                        <source src="production_id_4490356 (720p).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="gallery-item">
+                    <video width="320" height="240" controls>
+                        <source src="production_id_4491299 (720p).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="gallery-item">
+                    <img src="pexels-cottonbro-studio-6529119.jpg" alt="Gallery 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <!-- Add your contact information here if needed -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
